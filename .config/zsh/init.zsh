@@ -1,0 +1,2 @@
+ZSH_CUSTOM_CONFIG=$PWD
+source $ZSH_CUSTOM_CONFIG/myAliases.zsh
