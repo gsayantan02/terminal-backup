@@ -69,18 +69,22 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/.config/zsh
-source $ZSH_CUSTOM
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump)
+
+plugins=(
+	git 
+	autojump 
+	zsh-autosuggestions
+	vi-mode)
+
 
 source $ZSH/oh-my-zsh.sh
-
+source $HOME/.config/zsh/init.zsh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
